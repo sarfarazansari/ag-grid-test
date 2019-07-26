@@ -1,0 +1,14 @@
+<ag-grid-angular
+style="width: 100%; height: 400px;"
+class="ag-theme-balham"
+(gridReady)="onGridReady($event)"
+[rowData]="rowData$ | async"
+[columnDefs]="columnDefs"
+[defaultColDef]="defaultColDef"
+[icons]="icons"
+[sideBar]="sideBar"
+[frameworkComponents]="frameworkComponents"
+rowSelection="multiple"
+(rowSelected)="onRowSelected($event)"
+(selectionChanged)="onSelectionChanged($event)">
+</ag-grid-angular>
